@@ -1,0 +1,27 @@
+package Kalluri.Maheshbabu;
+
+import java.util.Properties;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+public class KalluriGlobalVariables {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		Properties porp = new Properties();
+		FileInputStream fos = new FileInputStream("C:\\Users\\Bablu\\Mahesh\\Maheshbabu\\src\\test\\java\\kalluri.properties");
+		porp.load(fos);
+		porp.getProperty("browser");
+		
+		System.out.println("porp.getProperty(\"browser\")");
+		
+		porp.setProperty("browser", "firefox");
+		System.out.println("porp.getProperty(\"browser\")");
+		
+		FileInputStream fas = new FileInputStream("C:\\Users\\Bablu\\Mahesh\\Maheshbabu\\src\\test\\java\\kalluri.properties");
+		porp.store(fas, null);
+		System.out.println("porp.getProperty(\"browser\")");
+		}
+
+}

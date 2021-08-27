@@ -1,0 +1,17 @@
+package Kalluri.Maheshbabu;
+
+import org.junit.Test;
+
+public class NagarajuTest {
+	@Test
+	public void wife()
+	{
+		System.out.println("Aparna");
+	}
+	@Test
+	public void son()
+	{
+		System.out.println("Devansh");
+	}
+	
+}

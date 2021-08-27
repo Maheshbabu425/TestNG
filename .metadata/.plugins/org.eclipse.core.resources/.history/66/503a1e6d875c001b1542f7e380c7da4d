@@ -1,0 +1,19 @@
+package kalluri;
+
+import java.util.logging.LogManager;
+
+public class Demo {
+
+	
+	//	 private static Logger log	=LogManager.getLogger("C:\\Users\\Bablu\\Mahesh\\Log4j\\src\\Kalluri\\Demo.java");
+	
+	
+	
+	private static Logger log =LogManager.getLogger(Demo.class.getName());
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

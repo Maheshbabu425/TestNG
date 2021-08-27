@@ -1,0 +1,24 @@
+package Mahesh;
+import org.apache.logging.log4j.*;
+
+public class Demo1 {
+
+	
+	//	 private static Logger log	=LogManager.getLogger("C:\\Users\\Bablu\\Mahesh\\Log4j\\src\\Kalluri\\Demo.java");
+	
+	
+	
+	private static Logger log =LogManager.getLogger(Demo1.class.getName());
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		log.debug("I am debuging");
+		log.info("Object is present");
+		log.debug("Object is not present");
+		log.debug("this is fatal");
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package kalluri;
+
+
+public class Demo {
+
+	
+	//	 private static Logger log	=LogManager.getLogger("C:\\Users\\Bablu\\Mahesh\\Log4j\\src\\Kalluri\\Demo.java");
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

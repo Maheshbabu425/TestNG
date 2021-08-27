@@ -1,0 +1,32 @@
+package ObjectRepository;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class RediffLoginPageFactory {
+
+	WebDriver driver;
+
+	public RediffLoginPageFactory(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	@FindBy(xpath("//input[@id='login1']"));
+	By password = By.xpath("input[@id='password']");
+	By signin = By.name("proceed");
+
+	public WebElement Username() {
+		return driver.findElement(username);
+	}
+
+	public WebElement Password() {
+		return driver.findElement(password);
+	}
+
+	public WebElement Login() {
+		return driver.findElement(signin);
+	}
+
+}

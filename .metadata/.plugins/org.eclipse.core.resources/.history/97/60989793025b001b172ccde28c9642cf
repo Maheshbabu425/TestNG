@@ -1,0 +1,28 @@
+package Kalluri.Maheshbabu;
+
+import org.testng.annotations.Test;
+
+public class SrinivasaraoTest {
+
+	@Test
+	public void wife()
+	{
+		System.out.println("Nirmala");
+	}
+	@Test
+	public void son()
+	{
+		System.out.println("Nagaraju");
+	}
+	@Test
+	public void grandSon()
+	{
+		System.out.println("Devansh");
+	}
+	
+	
+}
+
+
+
+

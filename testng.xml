@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Loan System" parallel="tests" thread-count="5">
+  
+  <test thread-count="5" name="Loan">
+    <classes>
+      <class name="Demo.Basic"/>
+    </classes>
+  </test> 
+  
+  <test name="Personal Loan">
+  <parameter name="URLYahoo" value="www.yahoo.com"/>
+  <classes>
+  <class name="Demo.PersonalLoan">
+  <methods>
+  <include name="webPersonalLoan"/>
+  </methods>
+  <methods>
+  <include name="MobilePersonalLoan"/>
+  </methods>
+  </class>
+   </classes>
+  </test>
+  
+  <test name="Car Loan">
+  <classes>
+  <class name= "Demo.CarLoan">
+  <methods>
+  <exclude name= "mobileCarLoan"/>
+  </methods>
+  </class>
+  </classes>
+  </test>
+  
+  <test name= "Home Loan">
+  <classes>
+  <class name= "Demo.HomeLoan"/>
+  </classes>
+  </test>
+  
+  
+  <test name="Other Loans">
+  <classes>
+     <class name= "Demo.Banking">
+     
+         </class>
+  </classes>
+  </test>
+  
+</suite> 
